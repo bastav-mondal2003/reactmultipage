@@ -99,7 +99,7 @@ li {
       font-size: 3.8rem;
       font-weight: 600;
       margin-bottom: 6rem;
-      text-transform: capitalize;
+     
     }
 
     input, textarea{
@@ -107,7 +107,7 @@ li {
     color: ${({ theme }) => theme.colors.black};
     padding: 1.6rem 2.4rem;
     border: 1px solid ${({ theme }) => theme.colors.border};
-    text-transform: uppercase;
+    text-transform: lowercase;
    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
 }
     input[type="submit"]{

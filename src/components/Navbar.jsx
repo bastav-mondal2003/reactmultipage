@@ -7,6 +7,14 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const Nav = styled.nav`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: ${({ theme }) => theme.colors.white};
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
     .navbar-list {
       display: flex;
       gap: 4.8rem;
@@ -61,7 +69,7 @@ const Navbar = () => {
       .navbar-list {
         width: 100vw;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         background-color: #fff;
